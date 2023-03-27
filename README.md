@@ -10,31 +10,22 @@ This is a simple Flask application that allows users to upload and download file
 1.  Clone this repository to your local machine.
 2.  Create a `.env` file in the root directory of the project and add the following variables:
     
-    makefileCopy code
-    
     `FLASK_HOST=localhost FLASK_PORT=5000`
     
     You can change the values of these variables to suit your needs.
 3.  Build the Docker image by running the following command in the root directory of the project:
     
-    Copy code
-    
     `docker build -t fileserver .`
     
 4.  Start the application by running the following command in the root directory of the project:
-    
-    Copy code
     
     `docker-compose up`
     
     This will start the application and make it available at [http://localhost:5000](http://localhost:5000/).
 5.  To stop the application, run the following command:
     
-    Copy code
-    
     `docker-compose down`
     
-
 ## Endpoints
 
 -   `/` - The index page of the application.
